@@ -2,6 +2,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSingleton<CleanArquitecture.Application.Interfaces.IServiceEntryRepository,
+    CleanArquitecture.Infrastructure.Repositories.InMemoryServiceEntryRepository>();
+builder.Services.AddTransient<CleanArquitecture.Application.UseCases.RegisterEntryUseCase>();
 
 var app = builder.Build();
 

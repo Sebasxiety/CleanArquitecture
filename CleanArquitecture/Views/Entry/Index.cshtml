@@ -1,0 +1,26 @@
+@model IEnumerable<CleanArquitecture.Domain.ServiceEntry>
+<h1>Service Entries</h1>
+<a href="/Entry/Create">New Entry</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Customer</th>
+            <th>Device</th>
+            <th>Status</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var entry in Model)
+    {
+        <tr>
+            <td>@entry.Id</td>
+            <td>@entry.CustomerName</td>
+            <td>@entry.Device.Brand @entry.Device.Model</td>
+            <td>@entry.Status</td>
+            <td>@entry.EntryDate.ToShortDateString()</td>
+        </tr>
+    }
+    </tbody>
+</table>
