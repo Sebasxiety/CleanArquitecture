@@ -1,14 +1,31 @@
-Este repositorio contiene un proyecto de Clean Architecture para una aplicación ASP.NET MVC.
+# Ejemplo de CleanArquitecture
 
-Proyectos
-Domain – Entidades principales (Device, ServiceEntry) y enumeraciones.
+> **Clean Architecture** aplicada a una **aplicación ASP.NET MVC** minimalista.
 
-Application – Casos de uso e interfaces de repositorio.
+---
 
-Infrastructure – Implementación de repositorio en memoria.
+## Proyectos
 
-Controllers y Views – Capa web para listar y crear registros de servicio.
+- **`Domain`**  
+  Núcleo de la aplicación: entidades principales (`Device`, `ServiceEntry`) y enumeraciones.
 
-Ejecución
-El proyecto está dirigido a .NET 8. Restaura y ejecuta con dotnet run en la carpeta CleanArquitecture.
+- **`Application`**  
+  Lógica de negocio: casos de uso e interfaces de repositorio.
 
+- **`Infrastructure`**  
+  Detalles de implementación: repositorio en memoria para pruebas y prototipos.
+
+- **`Controllers`** & **`Views`**  
+  Capa de presentación: listados y formularios para gestionar registros de servicio.
+
+---
+
+## Ejecución
+
+El proyecto está dirigido a **`.NET 8`**.  
+Para compilar y ejecutar:
+
+```bash
+cd CleanArquitecture
+dotnet restore
+dotnet run
