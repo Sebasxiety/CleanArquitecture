@@ -1,6 +1,6 @@
 # Ejemplo de CleanArquitecture
 
-**Clean Architecture** aplicada a una **aplicación ASP.NET MVC** minimalista.
+**Clean Architecture** aplicada a una **aplicación ASP.NET MVC**.
 
 ---
 
