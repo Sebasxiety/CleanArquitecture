@@ -2,7 +2,6 @@
 
 This repository contains a minimal example demonstrating Clean Architecture concepts for an ASP.NET MVC application.
 
-The sample models a basic service to register mobile device entries in a repair shop.
 
 ## Projects
 
