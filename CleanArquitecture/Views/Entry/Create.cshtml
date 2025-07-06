@@ -1,0 +1,21 @@
+@model CleanArquitecture.Domain.ServiceEntry
+<h1>New Service Entry</h1>
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="CustomerName"></label>
+        <input asp-for="CustomerName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Device.Brand">Brand</label>
+        <input asp-for="Device.Brand" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Device.Model">Model</label>
+        <input asp-for="Device.Model" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Device.Imei">IMEI</label>
+        <input asp-for="Device.Imei" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
